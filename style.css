@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-green: hsl(158, 36%, 37%);
+  --color-primary-cream: hsl(30, 38%, 92%);
+  --color-gray: hsl(228, 12%, 48%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: var(--color-primary-cream);
+}
+
+.container {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  background-color: #fff;
+}
+.img--mobile {
+  display: none;
+}
+.content__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1.8rem;
+}
+.content__info--type {
+  color: var(--color-gray);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+.content__info--title,
+.price--current {
+  font-family: "Fraunces", serif;
+}
+.content__info--title {
+  font-size: 2rem;
+  line-height: 1;
+}
+.content__info--price {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.content__info--description {
+  color: var(--color-gray);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.price--current {
+  color: var(--color-primary-green);
+  font-size: 2rem;
+}
+.price--original {
+  color: var(--color-gray);
+  font-size: 0.75rem;
+  text-decoration: line-through;
+}
+.attribution {
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.content__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  height: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 0.4rem;
+  background-color: var(--color-primary-green);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    flex-direction: column;
+  }
+  .img--desktop {
+    display: none;
+  }
+  .img--mobile {
+    display: block;
+  }
+}
