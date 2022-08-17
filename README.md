@@ -1,2 +1,2 @@
 # product-preview-card
-/https://frontend-product-card.netlify.app//
+https://frontend-product-card.netlify.app/
